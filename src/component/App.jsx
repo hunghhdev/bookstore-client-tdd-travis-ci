@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React from 'react';
 import baseUrl from '../config';
+import BookContainer from './book/BookContainer';
 import Layout from './layout/Layout';
 
 const App = () => {
@@ -11,7 +12,7 @@ const App = () => {
 
     return (
         <Layout>
-            <div>My first component updated</div>
+            <BookContainer />
         </Layout>
     )
 }
