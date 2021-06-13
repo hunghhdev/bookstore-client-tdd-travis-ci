@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React from 'react';
-import baseUrl from './config';
+import baseUrl from '../config';
 
 const App = () => {
 
