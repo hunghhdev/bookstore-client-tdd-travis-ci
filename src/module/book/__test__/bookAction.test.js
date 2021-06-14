@@ -15,7 +15,7 @@ describe('BookActions', () => {
 
         axios.get.mockImplementation(() => Promise.resolve({
             data: [{
-                id: 1,
+                id: '1',
                 title: 'test title',
                 description: 'des',
                 releaseYear: 2018
@@ -24,11 +24,11 @@ describe('BookActions', () => {
 
         await store.dispatch(getBooksAction());
         const actions = store.getActions();
-        expect(actions.length).toEqual(1);
-        expect(actions[0]).toEqual({
+        expect(actions.length).toEqual(3);
+        expect(actions[1]).toEqual({
             type: 'BOOKLIST',
             payload: [{
-                id: 1,
+                id: '1',
                 title: 'test title',
                 description: 'des',
                 releaseYear: 2018

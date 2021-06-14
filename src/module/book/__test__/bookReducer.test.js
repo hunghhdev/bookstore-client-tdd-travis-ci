@@ -6,7 +6,7 @@ describe('bookReducer test', () => {
         const action = {
             type: 'BOOKLIST',
             payload: [{
-                id: 1,
+                id: '1',
                 title: 'test title',
                 description: 'des',
                 releaseYear: 2018
@@ -17,11 +17,12 @@ describe('bookReducer test', () => {
 
         expect(newState).toEqual({
             books: [{
-                id: 1,
+                id: '1',
                 title: 'test title',
                 description: 'des',
                 releaseYear: 2018
-            }]
+            }],
+            promise: { isPending: false, isFulfilled: false, isErrorOcurred: false }
         })
     })
 })

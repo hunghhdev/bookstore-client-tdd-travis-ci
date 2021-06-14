@@ -26,10 +26,10 @@ exports[`App component should render app with error 1`] = `
       class="MuiBox-root MuiBox-root-3"
     >
       <div
-        class="MuiBox-root MuiBox-root-8 makeStyles-bookContainer-4"
+        class="MuiBox-root MuiBox-root-10 makeStyles-bookContainer-4"
       >
         <div
-          class="MuiBox-root MuiBox-root-9 makeStyles-bookFilter-5"
+          class="MuiBox-root MuiBox-root-11 makeStyles-bookFilter-5"
         >
           <div
             class="MuiPaper-root makeStyles-bookFilterPapper-6 MuiPaper-elevation1 MuiPaper-rounded"
@@ -38,9 +38,16 @@ exports[`App component should render app with error 1`] = `
           </div>
         </div>
         <div
-          class="MuiBox-root MuiBox-root-10 makeStyles-bookList-7"
+          class="MuiBox-root MuiBox-root-12 makeStyles-bookList-7"
         >
-          Here we will display all books.
+          <span
+            class="MuiSkeleton-root MuiSkeleton-rect MuiSkeleton-pulse"
+            data-testid="book-loader"
+            style="width: 80%; height: 200px;"
+          />
+          <div
+            class="MuiBox-root MuiBox-root-13 makeStyles-bookList-7"
+          />
         </div>
       </div>
     </div>
